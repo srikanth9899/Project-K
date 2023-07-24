@@ -8,6 +8,7 @@
     <name>Visualpathit VProfile Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
+	<jdk.version>1.8</jdk.version>
         <spring.version>4.2.0.RELEASE</spring.version>
         <spring-security.version>4.0.2.RELEASE</spring-security.version>
         <spring-data-jpa.version>1.8.2.RELEASE</spring-data-jpa.version>
@@ -20,6 +21,12 @@
         <logback.version>1.1.3</logback.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+	<log4j.version>1.2.17</log4j.version>
+	<sonar.host.url>http://3.92.44.105:9000/</sonar.host.url>
+	<sonar.login>admin</sonar.login>
+	<sonar.password>srinivas</sonar.password> 
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>
@@ -119,6 +126,21 @@
     		<scope>test</scope>
 		</dependency>
     </dependencies>
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Srinivas</name>
+	      <url>http://54.237.168.37:8081/repository/srinivas/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Srinivas-Snapshot</name>
+	      <url>http://54.237.168.37:8081/repository/srinivas-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
     <build>
         <plugins>
             <plugin>

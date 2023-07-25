@@ -130,14 +130,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Srikanth</name>
-	      <url>http://54.237.168.37:8081/repository/srikanth/</url>
+	      <name>srikanth-release</name>
+	      <url>http://44.201.227.255:8081/repository/srikanth-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Srikanth-Snapshot</name>
-	      <url>http://54.237.168.37:8081/repository/srikanth-snapshot/</url>
+	      <name>srikanth-snapshot</name>
+	      <url>http://44.201.227.255:8081/repository/srikanth-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
